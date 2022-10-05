@@ -31,5 +31,35 @@
         }
                     
                 </script>
+                <form>
+                    <input type="radio" onclick="chooseOp()" id="times" name="topping"   
+                    value="times">
+                    <label for="*">*</label></br>
+                    <input type="radio" onclick="chooseOp()" id="divide" name="topping"   
+                    value="divide">
+                    <label for="/">/</label></br>
+                    <input type="radio" onclick="chooseOp()" id="expo" name="topping"   
+                    value="exponent">
+                    <label for="**">**</label></br>
+                </form>
+                <p id="res">Results</p>
+                <script>
+                     function chooseOp(){
+                     bas = document.getElementById("base").value
+                     exp = document.getElementById("perc").value
+                     kj = document.getElementById("res")
+                     if(document.getElementById("times").checked){
+                     let y=+bas*exp;
+                    kj.innerHTML=y
+      }
+                 else if(document.getElementById("expo").checked){
+                   kj.innerHTML=bas**exp
+      }
+      
+      else if(document.getElementById("divide").checked){
+          kj.innerHTML=bas/exp
+      }
+    }   
+                </script>
     </body>
 </HTML>
