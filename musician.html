@@ -23,7 +23,7 @@
     <label for="guess_musician">Guess the musician </label>
     <input type ="text" id="guess_musician" name="guess_musician" autofocus> <br>
 
-    <input type="button" onclick="checkGuess()" value="Check the guess">
+    <input type="button" onclick="checkGuess();endGame()" value="Check the guess">
 </form>
 
 
@@ -61,6 +61,19 @@ function swapImage(){
         default:document.getElementById("insectImage").src="GreenFly.jpg";useImage = 2;
 
     }
+}
+function endGame(){
+
+while (wrong > 3) {
+    if(wrong>=3){
+        wrong-=5
+        alert("Sorry, game over.")
+    }
+    else{
+        document.getElementById("result").innerHTML = "correct : " + correct + " , " + " wrong : " + wrong
+    }    
+}
+
 }
 </script>
 
