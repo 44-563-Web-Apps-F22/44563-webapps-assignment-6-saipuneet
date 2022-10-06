@@ -10,6 +10,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="container p-3 my-3 bg-secondary text-light">
         <h1 style="text-align:center">Puneeth selects a vacation</h1>
         <div class="container">
             <form>
@@ -26,19 +27,15 @@
                 <input type="button" class="btn btn-warning" value="Select a vacation" onclick="selectVacation()">
             
             </form>
-            <br>
             <form>
                 <label for="city">Enter a city</label>
-                <input type="text" id="city" name="city" value="city"> <br>
+                <input type="text" id="city" name="city" value="city"> 
                 
                 <label for="city">Enter price</label>
-                <input type="text" id="price" name="price"> <br>
+                <input type="text" id="price" name="price">
             
                 <input type="button" class="btn btn-success" value="Update the vacation" onclick="updateVacation()">
             </form>
-            
-            
-            
             <p id="result">This text will be replaced </p>
             </div>
             </div>
